@@ -1,0 +1,45 @@
+$sizes: (
+    pixel: 1px,
+    root: 10px,
+    text: 1.6rem,
+    line-height: 1.5,
+    container-width: 126.8rem,
+    content-width: 79.2rem,
+    margin: 1.6rem,
+    gutter: 3.2rem,
+    spacing: 8rem,
+    device-spacing: 4rem,
+    breakpoint-small: 544px,
+    breakpoint-medium: 768px,
+    breakpoint-large: 992px,
+    breakpoint-xl: 1440px,
+);
+
+$gutter: map-get($sizes,gutter);
+
+$colors: (
+    text: #000000,
+    text-inverse: #FFFFFF,
+    charcoal: #2B3237,
+    charcoal-dark: #1E2124,
+    light: #F2F2F2,
+    divider: #E6E6E6,
+    block: rgba(0,0,0,0.05),
+    block10: rgba(0,0,0,0.1),
+    shadow: 0px 2px 4px 0px rgba(0,0,0,0.2)
+);
+
+$fonts: (
+    primary: (
+        'abcsans'
+    )
+);
+
+$font-weight: (
+    black: 900,
+    bold: 700,
+    regular: 400,
+    light: 300
+);
+
+$transition: 235ms ease;

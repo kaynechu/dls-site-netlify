@@ -1,0 +1,63 @@
+h2,
+h3,
+h4 {
+    font-weight: map-get($font-weight, bold);    
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3.4rem;
+    font-weight: map-get($font-weight, black);
+    margin-top: 0;
+}
+h2 {
+    font-size: 2.8rem;
+    margin-top: 0;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h4 {
+    font-size: 1.6rem;
+}
+span {
+    font-size: 1.2rem;
+    color: #6E6E6E;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/*Devices above 768px*/
+
+@include breakpoint(medium-up) {
+    h1 {
+        font-size: 4.4rem;
+        line-height: 5rem;
+    }
+}
+
+/*Font face ABC Sans*/
+
+@font-face {    
+    font-family: map-get($fonts, primary);
+    src: url(//res.abc.net.au/fonts/abcsans/abcsans-regular.woff2);
+    font-weight: map-get($font-weight, regular);
+}
+
+@font-face {
+    font-family: map-get($fonts, primary);
+    src: url(//res.abc.net.au/fonts/abcsans/abcsans-bold.woff2);
+    font-weight: map-get($font-weight, bold);
+}
+
+@font-face {
+    font-family: map-get($fonts, primary);
+    src: url(//res.abc.net.au/fonts/abcsans/abcsans-black.woff2);
+    font-weight: map-get($font-weight, black);
+}
+
+@font-face {
+    font-family: map-get($fonts, primary);
+    src: url(//res.abc.net.au/fonts/abcsans/abcsans-light.woff2);
+    font-weight: map-get($font-weight, light);
+}

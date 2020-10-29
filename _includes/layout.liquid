@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include _head.liquid %}
+  </head>
+  <body class="{% if page.url == '/' %}home{% else %}{% endif %}">
+    <header id="headerbar">{% include _header.liquid %}</header>
+
+    <main>
+      <!--All pages have left hand sidebar for nav except home-->
+      {% unless page.url == '/' %} {% include sidebar-layout.liquid %} {%
+      endunless %}
+
+      <div class="main-content">
+        
+        {% if page.url == '/' %} 
+            <!--For the home page only-->
+            {% include home-layout.liquid %}
+        
+        {% elsif 
+          page.url == '/components/' or 
+          page.url == '/guidelines/' or 
+          page.url == '/foundations/' or 
+          page.url == '/resources/' or 
+          page.url == '/roadmap/' or 
+          page.url == '/support/' %}
+            {% include landing-layout.liquid %}
+
+        {% else %} 
+            <!--For all other pages-->
+            {% include content-layout.liquid %}
+
+        {% endif %}
+        <!--footer-->
+        {% include _footer.liquid %}
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formalize/1.2/jquery.formalize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js">
+    </script>
+    <script src="/js/main.js"></script>
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("send", "pageview");
+    </script>
+    <script
+      src="https://www.google-analytics.com/analytics.js"
+      async
+      defer
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icons-action/download</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10,5.83333333 L10,7.08333333 L5.41666667,7.08333333 L5.41666667,14.5833333 L12.9166667,14.5833333 L12.9166667,10 L14.1666667,10 L14.1666667,15.8333333 L4.16666667,15.8333333 L4.16666667,5.83333333 L10,5.83333333 Z M15.8333333,4.16666667 L15.8333333,9.16666667 L14.5833333,9.16666667 L14.5833333,6.25 L10.0833333,10.8333333 L9.16666667,10 L13.75,5.41666667 L10.8333333,5.41666667 L10.8333333,4.16666667 L15.8333333,4.16666667 Z" id="path-1"></path>
+    </defs>
+    <g id="Wireframes-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-1406.000000, -957.000000)">
+            <g id="icons-media/external-link" transform="translate(1402.000000, 953.000000)">
+                <rect id="base-icon-size" x="0" y="3.03169527e-12" width="20" height="20"></rect>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="external-link" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <g id="Colour/Black" stroke-width="1" fill-rule="evenodd" mask="url(#mask-2)" fill="#000000">
+                    <g id="colour/_brand_agnostic/black">
+                        <polygon id="Colour" points="0 0 20 0 20 20 9.84269206 20 0 20"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

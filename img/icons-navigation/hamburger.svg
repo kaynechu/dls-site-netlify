@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icons-navigation/hamburger</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3,18 L21,18 L21,16.0000312 L3,16.0000312 L3,18 Z M3,13.0000313 L21,13.0000313 L21,11.0000156 L3,11.0000156 L3,13.0000313 Z M3,6 L3,7.99992188 L21,7.99992188 L21,6 L3,6 Z" id="path-1"></path>
+    </defs>
+    <g id="Wireframes-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-283.000000, -21.000000)">
+            <g id="Nav">
+                <g id="icons-navigation/hamburger" transform="translate(280.000000, 15.000000)">
+                    <rect id="base-icon-size" x="0" y="0" width="24" height="24"></rect>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="hamburger" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Colour/Black" stroke-width="1" fill-rule="evenodd" mask="url(#mask-2)" fill="#FFFFFF">
+                        <g id="colour/_brand_agnostic/white">
+                            <rect id="Colour" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

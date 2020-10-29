@@ -1,0 +1,32 @@
+<!--Default content page-->
+
+<div class="page-container">
+    <div class="content-container">
+        <div class="content-width">
+            <section class="page__intro">
+                {% if title %}<h1 id="link-1">{{title}}</h1>{% endif %}
+                {% if intro %}<p class="page__intro__text">{{intro}}</p>{% endif %}
+                {% if description %}<p>{{description}}</p>{% endif %}
+                {% if image %}
+                    <img src="{{image}}" alt="{{title}}" title="{{title}}">
+                {% endif %}
+            </section>
+            <section class="page__content">
+                <div class="page__content__row">
+                    {{content}}
+                </div>
+            </section>
+        </div>
+
+        <!--add switch to show-->
+        <div class="content-sidebar">
+            <div class="content-sidebar__fixed">
+                <h3>On this page</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>

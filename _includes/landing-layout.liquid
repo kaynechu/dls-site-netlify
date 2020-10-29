@@ -1,0 +1,110 @@
+<!--landing landing template-->
+
+<div class="page-container">
+    <div class="content-container">
+        <div class="full-width">
+            <section class="page__intro content-width">
+                {% if title %}<h1>{{title}}</h1>{% endif %}
+                {% if intro %}<p class="page__intro__text">{{intro}}</p>{% endif %}
+                {% if description %}<p>{{description}}</p>{% endif %}
+            </section>
+            <section class="landing">
+                <div class="landing__container">
+                    {% if page.url == '/components/' %} 
+                        {%- for post in collections.components -%}
+                            <div class="landing__item">
+                                <a class="landing__item__content" href="{{ post.url }}">
+                                    <div class="landing__item__content__heading">
+                                        <h4>{{ post.data.title }}</h4>
+                                    </div>
+                                    {% if post.data.image %}
+                                    <div class="landing__item__content__image">
+                                        <div>
+                                            <img src="{{post.data.title}}/{{ post.data.image }}" />
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                </a>
+                            </div>
+                        {%- endfor -%}
+        
+                    {% elsif page.url == '/foundations/' %} 
+                        {%- for post in collections.foundations -%}
+                            <div class="landing__item">
+                                <a class="landing__item__content" href="{{ post.url }}">
+                                    <div class="landing__item__content__heading">
+                                        <h4>{{ post.data.title }}</h4>
+                                    </div>
+                                    <div class="landing__item__content__image">
+                                        <div></div>
+                                    </div>
+                                </a>
+                            </div>
+                        {%- endfor -%}
+
+                    {% elsif page.url == '/guidelines/' %} 
+                        {%- for post in collections.guidelines -%}
+                            <div class="landing__item">
+                                <a class="landing__item__content" href="{{ post.url }}">
+                                    <div class="landing__item__content__heading">
+                                        <h4>{{ post.data.title }}</h4>
+                                    </div>
+                                    <div class="landing__item__content__image">
+                                        <div></div>
+                                    </div>
+                                </a>
+                            </div>
+                    {%- endfor -%}
+
+                    {% elsif page.url == '/roadmap/' %} 
+                        {%- for post in collections.roadmap -%}
+                            <div class="landing__item">
+                                <a class="landing__item__content" href="{{ post.url }}">
+                                    <div class="landing__item__content__heading">
+                                        <h4>{{ post.data.title }}</h4>
+                                    </div>
+                                    <div class="landing__item__content__image">
+                                        <div></div>
+                                    </div>
+                                </a>
+                            </div>
+                    {%- endfor -%}
+
+                    {% elsif page.url == '/support/' %} 
+                        {%- for post in collections.support -%}
+                            <div class="landing__item">
+                                <a class="landing__item__content" href="{{ post.url }}">
+                                    <div class="landing__item__content__heading">
+                                        <h4>{{ post.data.title }}</h4>
+                                    </div>
+                                    <div class="landing__item__content__image">
+                                        <div></div>
+                                    </div>
+                                </a>
+                            </div>
+                    {%- endfor -%}
+
+                    {% elsif page.url == '/resources/' %} 
+                        {%- for post in collections.resources -%}
+                            <div class="landing__item">
+                                <a class="landing__item__content" href="{{ post.url }}">
+                                    <div class="landing__item__content__heading">
+                                        <h4>{{ post.data.title }}</h4>
+                                    </div>
+                                    <div class="landing__item__content__image">
+                                        <div></div>
+                                    </div>
+                                </a>
+                            </div>
+                    {%- endfor -%}
+                    
+                    {% else %} 
+                        <!-- nothing set -->
+
+                    {% endif %}
+                    
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

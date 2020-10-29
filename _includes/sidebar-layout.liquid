@@ -1,0 +1,61 @@
+<!--Default left hand side menu-->
+
+<div class="sidebar">
+  <div class="sidebar__drawer">
+    <div class="sidebar__container">
+      <div class="sidebar__padding">
+        <h3>{{parent_title}}</h3>
+        <ul>
+          {% if page.url contains 'components' %}
+            <!--side menu showing = 'components'-->
+            {%- for post in collections.components -%}
+            <li{% if page.url == post.url %} aria-current="page"{% endif %}>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+
+          {% elsif page.url contains 'guidelines' %}
+            <!--side menu showing = 'guidelines'-->
+            {%- for post in collections.guidelines -%}
+            <li{% if page.url == post.url %} aria-current="page"{% endif %}>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+
+          {% elsif page.url contains 'resources' %}
+            <!--side menu showing = 'resources'-->
+            {%- for post in collections.resources -%}
+            <li{% if page.url == post.url %} aria-current="page"{% endif %}>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+
+          {% elsif page.url contains 'roadmap' %}
+            <!--side menu showing = 'roadmap'-->
+            {%- for post in collections.roadmap -%}
+            <li{% if page.url == post.url %} aria-current="page"{% endif %}>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+
+          {% elsif page.url contains 'support' %}
+            <!--side menu showing = 'support'-->
+            {%- for post in collections.support -%}
+            <li{% if page.url == post.url %} aria-current="page"{% endif %}>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+
+          {% else page.url contains 'foundations' %} 
+            <!--side menu showing = 'foundations'-->
+            {%- for post in collections.foundations -%}
+            <li{% if page.url == post.url %} aria-current="page"{% endif %}>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
